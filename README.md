@@ -1,20 +1,97 @@
-# SIWarga - Sistem Informasi Warga
+# SIWarga - Citizen Information System / Sistem Informasi Warga
 
 <div align="center">
   <img src="public/android-chrome-512x512.png" alt="SIWarga Logo" width="128" height="128">
   
-  **Sistem Informasi Warga Digital untuk Indonesia** 🇮🇩
+  **Digital Citizen Information System for Indonesia** 🇮🇩  
+  **Sistem Informasi Warga Digital untuk Indonesia**
   
   [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/sutiyonodoang/siwarga-app/releases/tag/v1.0.0)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
   [![Laravel](https://img.shields.io/badge/Laravel-12.25.0-red.svg)](https://laravel.com)
   [![React](https://img.shields.io/badge/React-19.0-blue.svg)](https://reactjs.org)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)](https://www.typescriptlang.org)
+  
+  **Language / Bahasa**: [🇺🇸 English](#english) | [🇮🇩 Indonesian](#indonesian)
 </div>
 
 ---
 
-## 📋 Tentang SIWarga
+## English
+
+### 📋 About SIWarga
+
+**SIWarga** is a modern web application for managing population data and citizen administration digitally. Specifically designed for local governments, RT/RW (neighborhood units), and community organizations in Indonesia.
+
+### ✨ Key Features
+- 👥 **Family Card Management** - Input and manage family card data with NIK validation
+- 👤 **Family Member Data** - Complete citizen profiles with socio-economic data
+- 🌍 **Indonesian Regional Database** - 37 provinces, 514 regencies, 7,277 districts, 83,761 villages
+- 🔐 **Enterprise Security** - Database encryption, rate limiting, audit trail
+- 📊 **Analytics Dashboard** - Real-time statistics and comprehensive reports
+- 📱 **Progressive Web App** - Mobile-friendly access with offline support
+- 🔄 **Automated Backup** - Encrypted backup system with retention policy
+
+### 🛠️ Technology Stack
+- **Backend**: Laravel 12.25.0 + PHP 8.2+
+- **Frontend**: React 19.0 + TypeScript 5.7
+- **Database**: SQLite with WAL mode and encryption
+- **UI/UX**: Radix UI + Tailwind CSS 4.0
+- **Build**: Vite 7.1 with Hot Module Replacement
+
+### 📚 Complete Documentation
+
+#### 🚀 **Getting Started**
+| Document | Description | Target Audience |
+|----------|-------------|-----------------|
+| **[📖 User Manual](docs/en/MANUAL.md)** | Complete guide on how to use the application | End users, Administrators |
+| **[⚙️ Installation Guide](docs/en/INSTALL.md)** | Development to production deployment setup | Developers, System Admins |
+
+#### 🔧 **Developer Resources**
+| Document | Description | Target Audience |
+|----------|-------------|-----------------|
+| **[� API Documentation](docs/en/API.md)** | REST API endpoints, authentication, SDK examples | Developers, Integrators |
+| **[🤝 Contributing Guide](docs/en/CONTRIBUTING.md)** | Guidelines for code contribution and development | Contributors, Developers |
+
+#### �📋 **Project Information**
+| Document | Description | Target Audience |
+|----------|-------------|-----------------|
+| **[🔒 Security Policy](docs/en/SECURITY.md)** | Security policy, vulnerability reporting | Security Team, Administrators |
+| **[📝 Changelog](docs/en/CHANGELOG.md)** | Version history and release notes | All stakeholders |
+| **[⚖️ License](LICENSE)** | MIT License and legal information | Legal, Compliance |
+
+### ⚡ Quick Start
+
+```bash
+# 1. Clone Repository
+git clone https://github.com/sutiyonodoang/siwarga-app.git
+cd siwarga-app
+
+# 2. Install Dependencies
+composer install
+npm install
+
+# 3. Setup Environment
+cp .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+
+# 4. Start Development
+npm run build
+php artisan serve
+
+# 5. Access Application
+# URL: http://127.0.0.1:8000
+# Login: admin@siwarga.local / password
+```
+
+> 📖 **Detailed installation**: See [Installation Guide](docs/en/INSTALL.md) for complete instructions
+
+---
+
+## Indonesian
+
+### 📋 Tentang SIWarga
 
 **SIWarga** adalah aplikasi web modern untuk mengelola data kependudukan dan administrasi warga secara digital. Dirancang khusus untuk pemerintah daerah, RT/RW, dan organisasi kemasyarakatan di Indonesia.
 
@@ -34,63 +111,53 @@
 - **UI/UX**: Radix UI + Tailwind CSS 4.0
 - **Build**: Vite 7.1 dengan Hot Module Replacement
 
----
+### 📚 Dokumentasi Lengkap
 
-## 📚 Dokumentasi Lengkap
-
-### 🚀 **Memulai**
+#### 🚀 **Memulai**
 | Dokumen | Deskripsi | Target |
 |---------|-----------|---------|
-| **[📖 Manual Penggunaan](MANUAL.md)** | Panduan lengkap cara menggunakan aplikasi | Pengguna akhir, Admin |
-| **[⚙️ Panduan Instalasi](INSTALL.md)** | Setup development hingga production deployment | Developer, System Admin |
+| **[📖 Manual Penggunaan](docs/id/MANUAL.md)** | Panduan lengkap cara menggunakan aplikasi | Pengguna akhir, Admin |
+| **[⚙️ Panduan Instalasi](docs/id/INSTALL.md)** | Setup development hingga production deployment | Developer, System Admin |
 
-### 🔧 **Developer**
+#### 🔧 **Developer**
 | Dokumen | Deskripsi | Target |
 |---------|-----------|---------|
-| **[🔌 API Documentation](API.md)** | REST API endpoints, authentication, SDK examples | Developer, Integrator |
-| **[🤝 Contributing Guide](CONTRIBUTING.md)** | Guidelines untuk kontribusi code dan development | Contributor, Developer |
+| **[🔌 API Documentation](docs/id/API.md)** | REST API endpoints, authentication, SDK examples | Developer, Integrator |
+| **[🤝 Contributing Guide](docs/id/CONTRIBUTING.md)** | Guidelines untuk kontribusi code dan development | Contributor, Developer |
 
-### 📋 **Project Info**
+#### 📋 **Project Info**
 | Dokumen | Deskripsi | Target |
 |---------|-----------|---------|
-| **[🔒 Security Policy](SECURITY.md)** | Kebijakan keamanan, vulnerability reporting | Security Team, Admin |
-| **[📝 Changelog](CHANGELOG.md)** | Riwayat versi dan release notes | Semua stakeholder |
+| **[🔒 Security Policy](docs/id/SECURITY.md)** | Kebijakan keamanan, vulnerability reporting | Security Team, Admin |
+| **[📝 Changelog](docs/id/CHANGELOG.md)** | Riwayat versi dan release notes | Semua stakeholder |
 | **[⚖️ License](LICENSE)** | MIT License dan informasi legal | Legal, Compliance |
 
----
+### ⚡ Memulai Cepat
 
-## ⚡ Quick Start
-
-### 1️⃣ **Clone Repository**
 ```bash
+# 1. Clone Repository
 git clone https://github.com/sutiyonodoang/siwarga-app.git
 cd siwarga-app
-```
 
-### 2️⃣ **Install Dependencies**
-```bash
+# 2. Install Dependencies
 composer install
 npm install
-```
 
-### 3️⃣ **Setup Environment**
-```bash
+# 3. Setup Environment
 cp .env.example .env
 php artisan key:generate
 php artisan migrate --seed
-```
 
-### 4️⃣ **Start Development**
-```bash
+# 4. Start Development
 npm run build
 php artisan serve
+
+# 5. Access Application
+# URL: http://127.0.0.1:8000
+# Login: admin@siwarga.local / password
 ```
 
-### 5️⃣ **Access Application**
-- **URL**: http://127.0.0.1:8000
-- **Login**: admin@siwarga.local / password
-
-> 📖 **Detail instalasi**: Lihat [INSTALL.md](INSTALL.md) untuk panduan lengkap
+> 📖 **Detail instalasi**: Lihat [Panduan Instalasi](docs/id/INSTALL.md) untuk panduan lengkap
 
 ---
 
