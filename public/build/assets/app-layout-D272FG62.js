@@ -1,0 +1,8 @@
+import{j as e}from"./utils-BSArQRAP.js";import{m as d,n,B as p,o as m,A as c,p as b,q as x}from"./small-mode-toggle-Cq2mG1yl.js";function h({breadcrumbs:a=[]}){const{isSmallMobile:s,isMobile:r,isSmallMode:l,deviceType:t}=d(),i=s||l&&!r;return e.jsxs("header",{className:`
+                flex shrink-0 items-center justify-between gap-2 border-b border-sidebar-border/50 transition-[width,height] ease-linear 
+                group-has-data-[collapsible=icon]/sidebar-wrapper:h-12 bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50
+                ${i?"h-12 px-2":"h-16 px-6 md:px-4"}
+            `,"data-device-type":t,"data-small-mode":l,children:[e.jsxs("div",{className:`flex items-center ${i?"gap-1":"gap-2"}`,children:[e.jsx(n,{className:i?"-ml-0.5 h-6 w-6":"-ml-1"}),e.jsx("div",{className:i?"hidden xs:block":"",children:e.jsx(p,{breadcrumbs:a,variant:"colored"})})]}),e.jsx("div",{className:"flex items-center gap-2",children:e.jsx(m,{})})]})}function u({children:a,breadcrumbs:s=[]}){const{isSmallMobile:r,isMobile:l,isSmallMode:t,deviceType:i}=d(),o=r||t&&!l;return e.jsxs(e.Fragment,{children:[e.jsx(b,{}),e.jsxs(x,{variant:"sidebar",className:`
+                    overflow-x-hidden bg-white dark:bg-gray-900 min-h-[100dvh]
+                    ${o?"p-1":"p-2 sm:p-4"}
+                `,"data-device-type":i,"data-small-mode":t,children:[e.jsx(h,{breadcrumbs:s}),a]})]})}function j({children:a,breadcrumbs:s=[]}){return e.jsx(c,{variant:"sidebar",children:e.jsx(u,{breadcrumbs:s,children:a})})}const v=({children:a,breadcrumbs:s,...r})=>e.jsx(j,{breadcrumbs:s,...r,children:a});export{v as A};
